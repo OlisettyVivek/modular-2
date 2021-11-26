@@ -1,0 +1,19 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    float p,r,c,t,R;
+    printf("\n enter the principal");
+    scanf("%f",&p);
+    printf("\n enter the rate");
+    scanf("%f",&r);
+    printf("\n enter the time in years");
+    scanf("%f",&t);
+    //we are calculating inside the bracket first i.e rate
+    R=1+r/100;
+    R=pow(R,t);
+    c=p*R;
+    printf("\n the compound intrest =%f",c);
+    return 0;
+}
