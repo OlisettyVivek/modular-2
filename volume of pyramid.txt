@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include<math.h>
+int main() {
+    int l,w,h;
+    float V;
+    printf("Enter the length of the pyramid\n");
+    scanf("%d",&l);
+    printf("Enter the width of the pyramid\n");
+    scanf("%d",&w);
+    printf("Enter the height of the pyramid\n");
+    scanf("%d",&h);
+    V=(l*w*h)/3;
+    printf("The Volume of the pyramid is:%f",V);
+    return 0;
+}

@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include<math.h>
+int main() 
+{
+    int a;
+    float cube_rt;
+    printf("Enter the number\n");
+    scanf("%d",&a);
+    cube_rt = pow(a,0.33334);
+    printf("The cube root  value is %d=%f",a,cube_rt);
+    return 0;
+}
