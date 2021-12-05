@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int AP,DA,DP,FP;
+    printf("Enter the actual price of the product\n");
+    scanf("%d",&AP);
+    printf("Enter the discount percentage of the product\n");
+    scanf("%d",&DP);
+    DA=(AP*DP)/100;
+    FP=(AP-DA);
+    printf("The discount amount : %d",DA );
+    printf("\nThe final price : %d",FP);
+    return 0;
+}
