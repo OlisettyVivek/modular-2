@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() 
+{
+    int a,b,c;
+    printf("to find max among three numbers\\n");
+    printf("enter three numbers:");
+    scanf("%d%d%d",&a,&b,&c);
+    if(a>b,a>c)
+    printf("%d is the max number",a);
+    else if(b>c)
+    printf("%d is the max number",b);
+    else
+    printf("%d is the max number",c);
+    
+   return 0;
+}
