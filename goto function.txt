@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() 
+{ 
+int a=1;
+print:
+printf("\n%d",a);
+a++;
+if(a==15)
+goto end;
+goto print;
+end:
+return 0;
+}
