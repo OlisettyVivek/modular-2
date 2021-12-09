@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() 
+{ 
+int a,b=1;
+printf("enter the number");
+scanf("%d",&a);
+print:
+printf("\n%d",b);
+b++;
+if(b==a)
+goto end;
+goto print;
+end:
+return 0;
+}
