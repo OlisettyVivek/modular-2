@@ -15,7 +15,9 @@ int main()
 	printf("enter marks of subject e");
 	scanf("%d",&e);
     t=a+b+c+d+e;
+    printf("total of marks of 5 subjects = %d\n",t);
     avg=t/5;
+    printf("average of 5 subjects = %d\n",avg);
     per=t/500*100;
 	printf("percentage of the student is %f",per);
 	return 0;
