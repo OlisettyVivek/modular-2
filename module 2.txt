@@ -1,0 +1,280 @@
+//iso,equi,sca triangle//
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int a,b,c;
+    printf("enter the 3 sides of a triangle a,b and c");
+    scanf("%d%d%d",&a,&b,&c);
+    if(a==b&&b==c)
+    printf("it is isosceles triangle");
+    else if(a==b&&b!=c)    
+    printf("isosceles triangle");
+    else
+    printf("scalene");
+    return 0;
+}
+
+//leap year//
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int a;
+    printf("enter the year");
+    scanf("%d",&a);
+    if(a%4==0)
+    printf("leap year");
+    else   
+    printf("not a leap year");
+    return 0;
+}
+ 
+//minimum among 3 no//
+#include <stdio.h>
+int main() 
+{
+    int a,b,c;
+    printf("to find max among three numbers\\n");
+    printf("enter three numbers:");
+    scanf("%d%d%d",&a,&b,&c);
+    if(a>b,a>c)
+    printf("%d is the max number",a);
+    else if(b>c)
+    printf("%d is the max number",b);
+    else
+    printf("%d is the max number",c);
+    
+   return 0;
+}
+
+//divisible by 5&11 or not//
+#include<stdio.h>
+int main()
+{
+	int n;
+	printf("enter the number");
+	scanf("%d",&n);
+	if(n%5==0&&n%11==0)
+	printf("the number is divisible");
+	else
+	printf("the number is not divisible");
+	return 0;
+	}
+
+//pos,neg,zero//
+#include<stdio.h>
+int main ()
+{
+	int ch;
+	printf("enter the number");
+	scanf("%d",&ch);
+	switch(ch < 0)
+{
+	case 1:
+		printf("the number is negative");
+		break;
+		
+		case 0:
+		switch(ch > 0)
+  {
+		case 1:
+		printf("the number is positive");
+		break;
+	
+	
+	case 0:
+			printf("the number is zero");
+	   break;
+     }break;}
+	  return 0;
+}
+
+//arithmatic operations//
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+   int a,b,c,d,e,f,g,ch;
+    printf("enter two variables a and b");
+    scanf("%d%d",&a,&b);
+    printf("enter operation \n1.addition \n2.difference \n3.multiplication \n4.division");
+    scanf("%d",&ch);
+    switch(ch)
+    {case 1:c=a+b;
+    printf("\nthe sum of %d and %d is %d",a,b,c);
+    break;
+     case 2:c=a-b;
+     printf("\nthe difference of %d and %d is %d",a,b,c);
+     break;  
+     case 3:c=a*b;
+     printf("\nthe product of %d and %d is %d",a,b,c);
+     break;
+     case 4:c=a/b;
+     printf("\nthe division of %d and %d id %d",a,b,c);
+     break; 
+     default: printf("\n error");
+    }
+    return 0;
+}
+
+//root of quadratic equ//
+#include <math.h>
+#include <stdio.h>
+int main() {
+    float a, b, c, discriminant, root1, root2, realPart, imagPart;
+    printf("Enter coefficients a, b and c: ");
+    scanf("%f %f %f", &a, &b, &c);
+    discriminant = b * b - 4 * a * c;
+    if (discriminant > 0) {
+        root1 = (-b + sqrt(discriminant)) / (2 * a);
+        root2 = (-b - sqrt(discriminant)) / (2 * a);
+        printf("root1 = %.2f and root2 = %.2f", root1, root2);
+    }
+    else if (discriminant == 0) {
+        root1 = root2 = -b / (2 * a);
+        printf("root1 = root2 = %.2lf;", root1);
+    }
+    else {
+        realPart = -b / (2 * a);
+        imagPart = sqrt(-discriminant) / (2 * a);
+        printf("root1 = %.2lf+%.2lfi and root2 = %.2f-%.2fi", realPart, imagPart, realPart, imagPart);
+    }
+    return 0;
+}
+
+//factorial of number//
+#include <stdio.h>
+int main()
+{
+int number;
+int i;
+unsigned long factorial=1;
+printf(" Enter Number : ");
+scanf("%d", &number);
+for (i = 1; i <= number ; i++) {
+      factorial = factorial * i;    
+  }
+  printf("\n\n %d! = %lu",number,factorial);
+    return 0;
+    
+}
+
+//palindrome or not//
+#include <stdio.h>
+int main() 
+{
+  int n,rev=0,rem,o;
+    printf("Enter an number");
+    scanf("%d",&n);
+    o=n;
+    while(n!=0) {
+        rem=n%10;
+        rev=rev*10+rem;
+        n /= 10;
+    }
+	    if (o==rev)
+        printf("%d is a palindrome.",o);
+        else
+        printf("%d is not a palindrome.",o);
+
+    return 0;
+}
+
+//perfect number or not//
+#include<stdio.h>
+int main()
+{
+	int n,i,rem,sum=0;
+	printf("enter a number");
+	scanf("%d",&n);
+	for(i=1;i<n;i++)
+	{ rem=n%i;
+	if(rem==0)
+	sum+=i;
+	}
+if(sum==n)
+printf("%d is a perfect number",n);
+elsee  
+printf("%d is not a perfect number",n);
+}
+
+//** pattern//
+#include<stdio.h>
+int main()
+{ int i,j;
+for(i=1;i<=10;i++)
+{
+	for (j=1;j<=i;j++)
+	{ 
+	printf("*");
+	}
+	printf("\n");
+   }
+}
+
+//a,b,c...pattern//
+#include<stdio.h>
+int main()
+{
+	int i,j;
+	for(i=1;i<=26;i++)
+	{
+		for(j=1;j<=i;j++)
+	
+	{
+		printf("%c",'A' -1+i);
+	}
+     printf("\n");
+  }
+}
+
+//1,2,3...pattern//
+#include<stdio.h>
+int main()
+{
+	int i,j;
+	for(i=1;i<=10;i++)
+	{
+		for(j=1;j<=i;j++)
+	
+	{
+		printf("%c",'1' -1+i);
+	}
+     printf("\n");
+  }
+}
+
+//n prime numbers//
+#include<stdio.h>
+ 
+int main()
+{
+    int i,j,n;
+    
+    printf("Enter the number till which you want prime numbers\n");
+    scanf("%d",&n);
+    
+    printf("Prime numbers are:-\n");    
+    for(i=2;i<=n;i++)
+    {
+        int c=0;
+        for(j=1;j<=i;j++)
+        {
+            if(i%j==0)
+            {
+                c++;
+            }
+        }
+         
+       if(c==2)
+        {
+            printf("%d ",i);
+        }
+    }
+}
+
+
+
+
